@@ -11,10 +11,6 @@
 </html>
 
 <?php
-        if(isset($_POST['logar'])){
-        $email = $_POST["email"];
-        $senha = $_POST["senha"];
-
-        echo "Olá, o e-amil cadastrado foi ".$email.", e a senha é ".$senha;
-    }
-        ?>
+        $path = $_SERVER['DOCUMENT_ROOT'].'/ecommerce/
+        include_once($path.'/Models/Usuarios.php');
+    ?>
