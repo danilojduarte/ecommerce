@@ -13,4 +13,13 @@
 <?php
         $path = $_SERVER['DOCUMENT_ROOT'].'/ecommerce/
         include_once($path.'/Models/Usuarios.php');
+
+    if(isset($_POST['logar'])){
+        $objUsuario = new Usuario();
+        $objUsuario->setEmail($_POST['email']);
+        $objUsuario->setSenha($_POST['senha']);
+
+        echo "Olá, o email é:".$objUsuario->getEmail()." e a senha é: ".objUsuario->getSenha();
+    }
+
     ?>
