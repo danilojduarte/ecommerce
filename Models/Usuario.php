@@ -1,7 +1,9 @@
-class usuarios({
-    id,
-    nome,
-    email,
-    senha,
-    endereço
-})
+<?php
+class Usuarios{
+    private $id;
+    private $nome;
+    private $email;
+    private $senha;
+    private $endereço;
+}
+?>
